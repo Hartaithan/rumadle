@@ -2,6 +2,15 @@ const xhr = new XMLHttpRequest();
 
 const url = "https://6502dc12a0f2c1f3faeafdf7.mockapi.io/test/estimates/1";
 
+const scriptUrl = document.currentScript.src;
+
+const urlParams = new URLSearchParams(scriptUrl.split("?")[1]);
+
+const districtId = urlParams.get("districtId") ?? "estimates-district";
+const realtyComplexId =
+  urlParams.get("realtyComplexId") ?? "estimates-realty-complex";
+const flateId = urlParams.get("flateId") ?? "estimates-flate";
+
 xhr.open("GET", url, true);
 
 xhr.responseType = "json";
@@ -11,13 +20,13 @@ xhr.onload = () => {
     const data = xhr.response;
 
     const district = document.querySelector(
-      "#estimates-district .estimates-collapsible-content p"
+      `#${districtId} .estimates-collapsible-content p`
     );
     const complex = document.querySelector(
-      "#estimates-realty-complex .estimates-collapsible-content p"
+      `#${realtyComplexId} .estimates-collapsible-content p`
     );
     const flate = document.querySelector(
-      "#estimates-flate .estimates-collapsible-content p"
+      `#${flateId} .estimates-collapsible-content p`
     );
 
     if (district && data.district) {
