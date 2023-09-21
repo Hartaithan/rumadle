@@ -21,6 +21,7 @@ main {
   width: 100%;
   max-width: 1300px;
   flex-grow: 1;
+  padding-bottom: 82px;
 }
 
 .button {
@@ -99,4 +100,102 @@ footer > section > p {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+}
+
+.estimates {
+  padding: 53px 79px 105px 89px;
+  border-radius: 25px;
+  background: #f5f8ff;
+}
+
+.estimates > h1 {
+  color: #110229;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.estimates > p {
+  color: #646464;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 28px;
+}
+
+.estimates > form {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 20px 26px 20px 29px;
+  box-shadow: 0px 0px 25px 0px rgba(20, 65, 181, 0.14);
+}
+
+.estimates > form > button {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  margin-left: 25px;
+}
+
+.divider {
+  width: 2px;
+  background: #dcdceb;
+  margin: 0px 25px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex: 10;
+}
+
+.form-group#address {
+  flex: 4;
+}
+
+.form-group#area {
+  flex: 3;
+}
+
+.form-group#rooms {
+  flex: 3;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #110229;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.form-group > div {
+  display: flex;
+  align-items: center;
+}
+
+.form-group > div > svg {
+  display: flex;
+  margin-bottom: 8px;
+  margin-right: 7px;
+}
+
+.form-group input,
+.form-group select {
+  border: none;
+  outline: none;
+  color: #8f90a6;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  margin-bottom: 8px;
 }

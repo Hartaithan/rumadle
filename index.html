@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link href="/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,7 +39,85 @@
       <button class="button">Войти</button>
     </header>
     <main>
-      <h1>Hello World!</h1>
+      <section class="estimates">
+        <h1>Оценка инвестиционной привлекательности квартиры</h1>
+        <p>
+          Анализ инвестиционной привлекательности квартиры на основе её<br />
+          параметров, также параметров жилого комплекса и инфраструктуры
+        </p>
+        <form>
+          <div class="form-wrapper">
+            <div class="form-group" id="address">
+              <label>Адрес и номер дома</label>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="18"
+                  viewBox="0 0 14 18"
+                  fill="none"
+                >
+                  <path
+                    d="M13 7.66602C13 12.3327 7 16.3327 7 16.3327C7 16.3327 1 12.3327 1 7.66602C1 6.07472 1.63214 4.54859 2.75736 3.42337C3.88258 2.29816 5.4087 1.66602 7 1.66602C8.5913 1.66602 10.1174 2.29816 11.2426 3.42337C12.3679 4.54859 13 6.07472 13 7.66602Z"
+                    stroke="#8F90A6"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7 9.66602C8.10457 9.66602 9 8.77059 9 7.66602C9 6.56145 8.10457 5.66602 7 5.66602C5.89543 5.66602 5 6.56145 5 7.66602C5 8.77059 5.89543 9.66602 7 9.66602Z"
+                    stroke="#8F90A6"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <input placeholder="Введите адрес" />
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="form-group" id="area">
+              <label>Площадь м²</label>
+              <input placeholder="Введите площадь" />
+            </div>
+            <div class="divider"></div>
+            <div class="form-group" id="rooms">
+              <label>Количество комнат</label>
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <button class="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 54 54"
+              fill="none"
+            >
+              <path
+                d="M26.3684 34.2632C30.7286 34.2632 34.2632 30.7286 34.2632 26.3684C34.2632 22.0083 30.7286 18.4737 26.3684 18.4737C22.0083 18.4737 18.4737 22.0083 18.4737 26.3684C18.4737 30.7286 22.0083 34.2632 26.3684 34.2632Z"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M36.2367 36.2372L31.9439 31.9444"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+      </section>
     </main>
     <footer>
       <section>
