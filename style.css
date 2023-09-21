@@ -272,7 +272,7 @@ footer > section > p {
 
 .estimates-collapsible {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: 21px 18px 23px 27px;
   border-radius: 10px;
   border: 1px solid #f0eeee;
@@ -280,13 +280,56 @@ footer > section > p {
   box-shadow: 0px 0px 35px 0px rgba(66, 98, 180, 0.1);
 }
 
-.estimates-collapsible > p {
+.estimates-collapsible input[type="checkbox"] {
+  display: none;
+}
+
+.estimates-collapsible
+  input[type="checkbox"]:checked
+  ~ .estimates-collapsible-content {
+  max-height: 100px;
+}
+
+.estimates-collapsible-header {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.estimates-collapsible-header > svg {
+  transform: rotate(0deg);
+  transition: all 0.35s;
+}
+
+.estimates-collapsible
+  input[type="checkbox"]:checked
+  + .estimates-collapsible-header
+  > svg {
+  transform: rotate(180deg);
+}
+
+.estimates-collapsible-header > p {
   color: #393860;
   font-size: 24px;
   font-weight: 600;
   line-height: 25px;
   opacity: 0.55;
   margin-right: auto;
+}
+
+.estimates-collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.estimates-collapsible-content > p {
+  margin-top: 8px;
+  color: #8991a2;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 81px;
 }
 
 .estimates-collapsible#estimates-district {
