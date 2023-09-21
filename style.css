@@ -199,3 +199,73 @@ footer > section > p {
   font-family: inherit;
   margin-bottom: 8px;
 }
+
+.form-group select {
+  width: fit-content;
+}
+
+.estimates-results {
+  padding: 66px 93px 58px 88px;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 0px 0px 35px 0px rgba(66, 98, 180, 0.1);
+  margin-top: 86px;
+}
+
+.estimates-results > h1 {
+  color: #110229;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.estimates-results > p {
+  margin-top: 21px;
+  color: #8991a2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.estimates-wrapper {
+  display: flex;
+  flex: 6;
+  gap: 41px;
+  margin-top: 52px;
+}
+
+.estimates-info {
+  flex: 2;
+}
+
+.estimates-content {
+  flex: 4;
+}
+
+.estimates-heading {
+  color: #8991a2;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+
+.estimates-value {
+  color: #110229;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.estimates-value.red {
+  color: #f00;
+}
+
+.estimates-description {
+  color: #8991a2;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.estimates-image {
+  min-height: 208px;
+}
