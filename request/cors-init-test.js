@@ -11,6 +11,20 @@ const realtyComplexId =
   urlParams.get("realtyComplexId") ?? "estimates-realty-complex";
 const flateId = urlParams.get("flateId") ?? "estimates-flate";
 
+const validation = /^[a-zA-Z0-9\-_]+$/;
+
+if (!validation.test(districtId)) {
+  throw new Error("Недопустимый идентификатор элемента districtId");
+}
+
+if (!validation.test(realtyComplexId)) {
+  throw new Error("Недопустимый идентификатор элемента realtyComplexId");
+}
+
+if (!validation.test(flateId)) {
+  throw new Error("Недопустимый идентификатор элемента flateId");
+}
+
 xhr.open("GET", url, true);
 
 xhr.responseType = "json";
@@ -42,7 +56,7 @@ xhr.onload = () => {
 };
 
 xhr.onerror = () => {
-  console.error("api request error");
+  console.error("Произошла ошибка при получении данных");
 };
 
 xhr.send();
