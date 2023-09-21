@@ -17,7 +17,7 @@ xhr.onload = () => {
       "#estimates-realty-complex .estimates-collapsible-content p"
     );
     const flate = document.querySelector(
-      "#eestimates-flate .estimates-collapsible-content p"
+      "#estimates-flate .estimates-collapsible-content p"
     );
 
     if (district && data.district) {
